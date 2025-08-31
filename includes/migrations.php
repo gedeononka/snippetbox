@@ -14,7 +14,6 @@ CREATE TABLE IF NOT EXISTS snippets (
 SQL;
 
     $pdo->exec($sql);
-    echo "Table 'snippets' vérifiée / créée avec succès.\n";
 } catch (PDOException $e) {
     die("Erreur création table : " . $e->getMessage());
 }
