@@ -1,0 +1,160 @@
+/* ===== Reset / Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #1e1e1e;
+    color: #eee;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* ===== Header ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brand a {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn.primary {
+    background: #0077cc;
+}
+
+.btn.danger {
+    background: #e74c3c;
+}
+
+/* ===== Cards ===== */
+.card {
+    background: #2c2c2c;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.grid.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 12px;
+}
+
+.card .tag {
+    display: inline-block;
+    background: #0077cc;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    margin-bottom: 6px;
+}
+
+.empty {
+    text-align: center;
+    margin: 20px 0;
+    color: #aaa;
+}
+
+/* ===== Forms ===== */
+.field {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    background: #1e1e1e;
+    color: #eee;
+    font-family: monospace;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.85em;
+    margin-top: 2px;
+}
+
+/* ===== Toolbar ===== */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.toolbar .muted {
+    color: #aaa;
+    font-size: 0.85em;
+}
+
+/* ===== Footer ===== */
+.footer {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 0.85em;
+    color: #aaa;
+}
+
+/* ===== Pre / Code ===== */
+pre {
+    background: #1e1e1e;
+    padding: 12px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: monospace;
+}
+
+/* ===== Form / Flex ===== */
+form[method="get"] select {
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    background: #1e1e1e;
+    color: #eee;
+}
