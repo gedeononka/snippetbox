@@ -5,6 +5,7 @@ session_start();
 
 // chemins
 require_once __DIR__ . '/includes/db.php'; // $pdo disponible
+require_once __DIR__ . '/includes/migrations.php';
 
 const CATEGORIES = ['PHP','HTML','CSS'];
 
